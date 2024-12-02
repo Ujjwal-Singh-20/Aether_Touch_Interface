@@ -33,6 +33,41 @@ Welcome to **Aether Touch Interface** – an innovative and intuitive smart cont
 
 ---
 
+## Setup API Key
+
+To use the weather-related features of the app, you need to set up your own OpenWeather API key. Follow the steps below to get your API key and integrate it with the project:
+
+### Steps to Setup API Key:
+1. **Create an OpenWeather account**:
+   - Go to [OpenWeather](https://openweathermap.org/) and sign up for an account.
+
+2. **Generate your API Key**:
+   - After logging in, go to the [API Keys section](https://home.openweathermap.org/api_keys).
+   - Click on "Create Key" to generate your personal API key.
+
+3. **Store the API Key securely**:
+   - For security reasons, it is highly recommended that you do **not** expose your API key directly in the code.
+   - Instead, store the key in an environment variable or in a `.env` file.
+
+4. **Add the API Key to Your Project**:
+   - In your project directory, create a `.env` file (if not already present).
+   - Add the following line to your `.env` file, replacing `your_api_key_here` with your actual OpenWeather API key:
+     ```
+     OPENWEATHER_API_KEY=your_api_key_here
+     ```
+
+5. **Use the API Key in the Project**:
+   - The app will automatically load your API key from the `.env` file and use it to fetch weather data.
+   
+6. **Alternative Method (Direct Code Integration)**:
+   - If you're not using `.env` files, you can directly replace the `OPENWEATHER_API_KEY` variable in the code with your API key (though this method is not recommended for security reasons).
+
+### Important Notes:
+- **Do not expose your API key publicly**: Make sure your `.env` file is listed in your `.gitignore` to avoid accidentally committing it to a public repository.
+- **Monitor your API usage**: OpenWeather API has usage limits depending on your plan. Be sure to keep track of your requests to avoid exceeding your limits.
+
+---
+
 ## Requirements
 
 Ensure you have the following dependencies installed:

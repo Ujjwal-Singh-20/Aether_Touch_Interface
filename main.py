@@ -38,7 +38,12 @@ load_shortcuts()
 
 
 # OpenWeatherMap API key
-API_KEY = "b6f7acd547c8efbfe45433be6efe1fb1"  
+API_KEY = os.getenv("OPENWEATHER_API_KEY")   #or directly update with your API key, for local testing
+
+if not API_KEY:
+    print("Error: API key is not set. Please visit OpenWeather and generate your own API key.")
+    print("Set it as an environment variable or update the code with your key.")
+    exit()
 
 
 action_map = {
@@ -481,11 +486,12 @@ class AetherTouchInterface:
                     area = length * width
 
                     #check if distance is less than threshold
-                    if distance_index_middle < 0.1 * area and distance_middle_ring < 0.1 * area:
+                    if GestureVolumeControl.is_desired_shape(self, lmlist):
                         self.toggle_gesture_volume_control()
 
                     elif GestureVolumeControl.is_desired_shape(self, lmlist):
                         self.toggle_gesture_volume_control()
+                        time.sleep(1)
 
                     gesture = self.detect_gesture(lmlist)  # Detect the gesture
 
