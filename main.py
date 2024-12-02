@@ -38,7 +38,8 @@ load_shortcuts()
 
 
 # OpenWeatherMap API key
-API_KEY = os.getenv("OPENWEATHER_API_KEY")   #or directly update with your API key, for local testing
+API_KEY = os.getenv("OPENWEATHER_API_KEY")   #or directly update with your API key(as a string in ""), for local testing
+# APT_KEY = "b6f7acd547c8efbfe45433be6efe1fb1"   #for direct usage, uncomment this line, and comment out the above line
 
 if not API_KEY:
     print("Error: API key is not set. Please visit OpenWeather and generate your own API key.")
