@@ -1,0 +1,8 @@
+customtkinter
+pyautogui
+requests
+opencv-python
+mediapipe
+numpy
+threading
+json
