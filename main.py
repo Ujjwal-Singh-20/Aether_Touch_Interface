@@ -66,7 +66,7 @@ class AetherTouchInterface:
     def __init__(self, root):
         self.root = root
         self.root.geometry("800x600")
-        self.root.title("Smart Hand-Tracking Mirror")
+        self.root.title("Aether Touch Interface")
         self.root.configure(bg=BG_COLOR)
 
         # Initialize selected functions for each gesture
@@ -582,6 +582,6 @@ if __name__ == "__main__":
 
     root = ctk.CTk()  # Create main CTk window
 
-    app = AetherTouchInterface(root)  # Create instance of SmartMirrorApp
+    app = AetherTouchInterface(root)  # Create instance of App
     
     root.mainloop()  # Start the Tkinter event loop
