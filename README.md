@@ -5,7 +5,7 @@ Welcome to **Aether Touch Interface** – an innovative and intuitive smart cont
 ---
 
 ## Demo Video
-[Watch the video here!]([https://drive.google.com/file/xyz123](https://drive.google.com/file/d/1-6EKMUBwxsZt6lArveeyEcnl8YBjrbjI/view?usp=sharing))
+[Watch the video here!](https://drive.google.com/file/d/1-6EKMUBwxsZt6lArveeyEcnl8YBjrbjI/view?usp=sharing)
 
 ---
 
